@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rpc-common</artifactId>
+    <artifactId>rpc-registry</artifactId>
 
     <dependencies>
         <!-- SLF4J -->
@@ -18,28 +18,11 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.7</version>
         </dependency>
-        <!-- Netty -->
+        <!-- ZooKeeper -->
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.0.24.Final</version>
-        </dependency>
-        <!-- 序列化工具 Protostuff -->
-        <dependency>
-            <groupId>com.dyuproject.protostuff</groupId>
-            <artifactId>protostuff-core</artifactId>
-            <version>1.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dyuproject.protostuff</groupId>
-            <artifactId>protostuff-runtime</artifactId>
-            <version>1.0.8</version>
-        </dependency>
-        <!-- 用来创建特定对象的工具 Objenesis -->
-        <dependency>
-            <groupId>org.objenesis</groupId>
-            <artifactId>objenesis</artifactId>
-            <version>2.1</version>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.5</version>
         </dependency>
     </dependencies>
 
@@ -55,4 +38,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
